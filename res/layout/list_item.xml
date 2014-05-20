@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="#fcd2d4"
+    android:padding="6dp" >
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/TextViewBase.UserName"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            style="@style/TextViewBase.UserName"
+            android:layout_toRightOf="@+id/text"
+            android:text="نام کاربری :" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            style="@style/TextViewBase.Comment"
+            android:layout_toRightOf="@+id/text1"
+            android:text="توضیحات :" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/text1"
+            style="@style/TextViewBase.Comment"
+            android:layout_alignParentLeft="true" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/text2"
+            style="@style/TextViewBase.Id"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            style="@style/TextViewBase.Id"
+            android:layout_toRightOf="@+id/text2" 
+			android:text="شماره پرسنلی :" />
+    </TableRow>
+
+</TableLayout>
