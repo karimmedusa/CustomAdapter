@@ -18,7 +18,7 @@ public class CustomAdapterActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        studentsListView = (ListView) findViewById(R.id.listView1);
+        studentsListView = (ListView) findViewById(R.id.listView);
         List<Student> students = retrieveStudents();
         adapter = new CustomAdapter(this, students);
         studentsListView.setAdapter(adapter);
